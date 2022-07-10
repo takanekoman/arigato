@@ -42,7 +42,7 @@ const Component: React.FC = () => {
               </Button>
             )}
             <Text pt={2} fontSize="xs" textAlign={'center'}>
-              rinkeby testnet
+              Arigato!!!
             </Text>
           </div>
         </VStack>
