@@ -4,8 +4,8 @@ import {
   discordUrl,
   explorerUrl,
   instagramUrl,
-  openseaUrl,
-  twitterUrl,
+  openseaUrl,https://opensea.io/collection/arigatosentai
+  twitterUrl,https://twitter.com/arigatoSENTAI
 } from '../../utils/snsLinks'
 
 const LinkIcon: React.FC<{
