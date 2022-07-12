@@ -31,7 +31,7 @@ export const openseaUrl = () => {
   switch (process.env.NEXT_PUBLIC_CHAIN_ID) {
     case '1':
       // Mainnet
-      return `https://opensea.io/assets/ethereum/${address}`
+      return `https://opensea.io/collection/arigatosentai`
     case '4':
       // Rinkeby
       return `https://testnets.opensea.io/assets/ethereum/${address}`
