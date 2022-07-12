@@ -36,49 +36,7 @@ const Component: React.FC = () => {
         </Link>
         <Flex alignItems="center" gap={8}>
           <Box display={{ base: 'none', lg: 'block' }}>
-            <Flex as="nav" gap={6}>
-              <Link href="/">
-                <Text
-                  as="a"
-                  borderBottom={`2px`}
-                  borderColor={
-                    router.pathname === '/' ? `black` : 'rgba(0,0,0,0)'
-                  }
-                  fontWeight="bold"
-                  cursor="pointer"
-                >
-                  MINT
-                </Text>
-              </Link>
-              <Link href="/collection">
-                <Text
-                  as="a"
-                  borderBottom={`2px`}
-                  borderColor={
-                    router.pathname === '/collection'
-                      ? `black`
-                      : 'rgba(0,0,0,0)'
-                  }
-                  fontWeight="bold"
-                  cursor="pointer"
-                >
-                  COLLECTION
-                </Text>
-              </Link>
-              <Link href="/owned">
-                <Text
-                  as="a"
-                  borderBottom={`2px`}
-                  borderColor={
-                    router.pathname === '/owned' ? `black` : 'rgba(0,0,0,0)'
-                  }
-                  fontWeight="bold"
-                  cursor="pointer"
-                >
-                  OWNED
-                </Text>
-              </Link>
-            </Flex>
+           
           </Box>
           <Box display={{ base: 'none', lg: 'block' }}>
             <SnsLinks />
@@ -89,15 +47,9 @@ const Component: React.FC = () => {
           <Box
             display={{ base: 'block', lg: 'none' }}
             height="32px"
-            onClick={() => {
-              store.setSpMenuOpened && store.setSpMenuOpened(true)
-            }}
+
           >
-            <Image
-              src="/assets/icon/icon_black_menu.svg"
-              width={32}
-              height={32}
-            />
+
           </Box>
         </Flex>
       </Flex>
@@ -106,3 +58,4 @@ const Component: React.FC = () => {
 }
 
 export { Component as Header }
+
